@@ -13,7 +13,7 @@ export const newTask = async (req, res, next) => {
 
     res.status(201).json({
       success: true,
-      message: "Task Added Successfully",
+      message: "Task Added Successfully :-) ",
     });
   } catch (error) {
     next(error);
@@ -46,7 +46,7 @@ export const updateTask = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      message: "Task Updated",
+      message: "Task Updated!!",
     });
   } catch (error) {
     next(error);
@@ -68,7 +68,7 @@ export const deleteTask = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      message: err.message,
+      message: "Task Deleted!!",
     });
   } catch (error) {
     next(error);
